@@ -1,0 +1,12 @@
+Tasks to complete: 
+
+1. Base conceptualisation and modelisation for your graph (S1, S2, S3)
+2. Ontology in OWL for the graph (S4)
+3. Queries that could be used once the graph is built (S5)
+4. The graph in RDF converted from existing data S6
+
+----- AS OF TODAY WE CAN ONLY COMPLETE THESE FIRST FOUR ------------
+
+5. Some code demonstrating the use of your graph S7
+6. Validation test done and constraints on the graph S8
+7. Ideas about how your application could benefits from learning techniques and other ways of exploring graphs S9, S10
