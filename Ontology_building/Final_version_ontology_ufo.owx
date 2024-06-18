@@ -1,0 +1,695 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/belen/ontologies/2024/5/ufo"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/belen/ontologies/2024/5/ufo">
+    <Prefix name="" IRI="http://www.semanticweb.org/belen/ontologies/2024/5/ufo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This is an ontology for UFO Sightings as part of the final project for the Web Semantics M1 TAL UL</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Air_Traffic_Control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Air_Traffic_Control_Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Air_Traffic_Controller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amateaur_Astronomer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ex-test_engineer_for_Hawker_Siddley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ex_Pilot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ex_Police"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ex_RAF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ex_RN_Cdr"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Former_Air_Traffic_Controller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Has_Pilot_License"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Journalist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoD_Guard_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Part-Time_Pilot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pilot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Police"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Police_Officer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Police_Sgt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RAF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RN_Air_Traffic_Control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retaired_Merchant_Seaman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retired_RAF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#changed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#changing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chevron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cigar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cityArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#crescent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cross"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cylinder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dateDocumented"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dateSighting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#delta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diamond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#egg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fireball"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#formation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hexagon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#latitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#longitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#occupationWitness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#oval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pyramid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rectangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#round"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sightingDuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sphere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#state"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#teardrop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#timeSighting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#townVillage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#triangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ufo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ufoShape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ufoSighting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unknown_occupation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unknown_shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#witness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOccupation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasShape"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfTownVillage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasDocumented"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasSeen"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Air_Traffic_Control"/>
+        <Class IRI="#Air_Traffic_Controller"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Ex_RAF"/>
+        <Class IRI="#Retired_RAF"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Air_Traffic_Control"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air_Traffic_Control_Employee"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Air_Traffic_Controller"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Amateaur_Astronomer"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ex-test_engineer_for_Hawker_Siddley"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ex_Pilot"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ex_Police"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ex_RAF"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ex_RN_Cdr"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Former_Air_Traffic_Controller"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Has_Pilot_License"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Journalist"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoD_Guard_Service"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Part-Time_Pilot"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pilot"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Police"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Police_Officer"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Police_Sgt"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RAF"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RN_Air_Traffic_Control"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Retaired_Merchant_Seaman"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Retired_RAF"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#changed"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#changing"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chevron"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cigar"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#circle"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cone"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#crescent"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cross"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cylinder"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#date"/>
+        <Class IRI="#dateSighting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#delta"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diamond"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disk"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dome"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#egg"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fireball"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flare"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flash"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#formation"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hexagon"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#latitude"/>
+        <Class IRI="#cityArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#light"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#longitude"/>
+        <Class IRI="#cityArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#occupationWitness"/>
+        <Class IRI="#witness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#other"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#oval"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pyramid"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rectangle"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#round"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sphere"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#teardrop"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#time"/>
+        <Class IRI="#dateSighting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#triangle"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ufoShape"/>
+        <Class IRI="#ufo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unknown_occupation"/>
+        <Class IRI="#occupationWitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unknown_shape"/>
+        <Class IRI="#ufoShape"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Air_Traffic_Control"/>
+        <Class IRI="#Air_Traffic_Control_Employee"/>
+        <Class IRI="#Air_Traffic_Controller"/>
+        <Class IRI="#Amateaur_Astronomer"/>
+        <Class IRI="#Ex-test_engineer_for_Hawker_Siddley"/>
+        <Class IRI="#Ex_Pilot"/>
+        <Class IRI="#Ex_Police"/>
+        <Class IRI="#Ex_RAF"/>
+        <Class IRI="#Ex_RN_Cdr"/>
+        <Class IRI="#Former_Air_Traffic_Controller"/>
+        <Class IRI="#Has_Pilot_License"/>
+        <Class IRI="#Journalist"/>
+        <Class IRI="#MoD_Guard_Service"/>
+        <Class IRI="#Part-Time_Pilot"/>
+        <Class IRI="#Pilot"/>
+        <Class IRI="#Police"/>
+        <Class IRI="#Police_Officer"/>
+        <Class IRI="#Police_Sgt"/>
+        <Class IRI="#RAF"/>
+        <Class IRI="#RN_Air_Traffic_Control"/>
+        <Class IRI="#Retaired_Merchant_Seaman"/>
+        <Class IRI="#Retired_RAF"/>
+        <Class IRI="#unknown_occupation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Air_Traffic_Control_Employee"/>
+        <Class IRI="#Air_Traffic_Controller"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Air_Traffic_Controller"/>
+        <Class IRI="#Former_Air_Traffic_Controller"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ex_Pilot"/>
+        <Class IRI="#Pilot"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ex_Police"/>
+        <Class IRI="#Police"/>
+        <Class IRI="#Police_Officer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ex_RAF"/>
+        <Class IRI="#RAF"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Has_Pilot_License"/>
+        <Class IRI="#Pilot"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Part-Time_Pilot"/>
+        <Class IRI="#Pilot"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Police_Officer"/>
+        <Class IRI="#Police_Sgt"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#changed"/>
+        <Class IRI="#changing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#dateDocumented"/>
+        <Class IRI="#dateSighting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#state"/>
+        <Class IRI="#townVillage"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#partOfState"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#wasDocumented"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDuration"/>
+        <Class IRI="#ufoSighting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOccupation"/>
+        <Class IRI="#witness"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasShape"/>
+        <Class IRI="#ufo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfCountry"/>
+        <Class IRI="#state"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfCountry"/>
+        <Class IRI="#townVillage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfState"/>
+        <Class IRI="#cityArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfTownVillage"/>
+        <Class IRI="#cityArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasDocumented"/>
+        <Class IRI="#ufoSighting"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasSeen"/>
+        <Class IRI="#ufo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#cityArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDuration"/>
+        <Class IRI="#sightingDuration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOccupation"/>
+        <Class IRI="#occupationWitness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasShape"/>
+        <Class IRI="#ufoShape"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfCountry"/>
+        <Class IRI="#country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfState"/>
+        <Class IRI="#state"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfTownVillage"/>
+        <Class IRI="#townVillage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasDocumented"/>
+        <Class IRI="#dateDocumented"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasSeen"/>
+        <Class IRI="#dateSighting"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasSeen"/>
+        <Class IRI="#latitude"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasSeen"/>
+        <Class IRI="#longitude"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasSeen"/>
+        <Class IRI="#witness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#state"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#partOfState"/>
+        <ObjectProperty IRI="#partOfTownVillage"/>
+    </DisjointObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOccupation</IRI>
+        <Literal xml:lang="en">witness hasOcupation occupationWitness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasShape</IRI>
+        <Literal>ufo hasShape ufoShape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfCountry</IRI>
+        <Literal xml:lang="en">state partOfCountry Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfState</IRI>
+        <Literal>cityArea partOfState state</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOfTownVillage</IRI>
+        <Literal>cityArea partOfTownVillage townVillage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasSeen</IRI>
+        <Literal>ufo wasSeen longitude and latitude and dateSightnign by witness</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
