@@ -1,0 +1,387 @@
+@prefix : <http://example.org/ufo#> .
+@prefix ex: <http://example.org/ufo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.org/ufo#> .
+
+<http://example.org/ufo> rdf:type owl:Ontology ;
+                          rdfs:comment "This is an ontology for UFO Sightings as part of the final project for the Web Semantics M1 TAL UL"@en .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/ufo#hasShape
+ex:hasShape rdf:type owl:ObjectProperty ;
+            rdfs:domain ex:UFO ;
+            rdfs:range ex:UfoShape ;
+            rdfs:comment "UFO hasShape UFOShape" .
+
+
+###  http://example.org/ufo#partOfCountry
+ex:partOfCountry rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain ex:State ;
+                 rdfs:range ex:Country ;
+                 owl:propertyDisjointWith ex:partOfState ;
+                 rdfs:comment "State PartOfCountry Country" .
+
+
+###  http://example.org/ufo#partOfState
+ex:partOfState rdf:type owl:ObjectProperty ;
+               rdfs:domain ex:CityArea ;
+               rdfs:range ex:State .
+
+
+###  http://example.org/ufo#wasSeen
+ex:wasSeen rdf:type owl:ObjectProperty ;
+           rdfs:domain ex:UFO ;
+           rdfs:range ex:latitude ,
+                      ex:longitude ;
+           rdfs:comment "UFO wasSeen at Latitude and Longitude" .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdf:type owl:FunctionalProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/ufo#dateDocumented
+ex:dateDocumented rdf:type owl:DatatypeProperty ;
+                  rdfs:domain ex:UfoSighting ;
+                  rdfs:range xsd:date ;
+                  rdfs:label "Date Documented" .
+
+
+###  http://example.org/ufo#dateTime
+ex:dateTime rdf:type owl:DatatypeProperty ;
+            rdfs:domain ex:UfoSighting ;
+            rdfs:range xsd:dateTime ;
+            rdfs:label "Date and Time" .
+
+
+###  http://example.org/ufo#describedEncounterLength
+ex:describedEncounterLength rdf:type owl:DatatypeProperty ;
+                            rdfs:domain ex:UfoSighting ;
+                            rdfs:range xsd:string ;
+                            rdfs:label "Described Encounter Length" .
+
+
+###  http://example.org/ufo#description
+ex:description rdf:type owl:DatatypeProperty ;
+               rdfs:domain ex:UfoSighting ;
+               rdfs:range xsd:string ;
+               rdfs:label "Description" .
+
+
+###  http://example.org/ufo#encounterLength
+ex:encounterLength rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ex:UfoSighting ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:label "Encounter Length" .
+
+
+###  http://example.org/ufo#latitude
+ex:latitude rdf:type owl:DatatypeProperty ;
+            rdfs:domain ex:CityArea ;
+            rdfs:range xsd:decimal .
+
+
+###  http://example.org/ufo#longitude
+ex:longitude rdf:type owl:DatatypeProperty ;
+             rdfs:domain ex:CityArea ;
+             rdfs:range xsd:decimal .
+
+
+###  http://example.org/ufo#ufoShape
+ex:ufoShape rdf:type owl:DatatypeProperty ;
+            rdfs:domain ex:UfoSighting ;
+            rdfs:range xsd:string ;
+            rdfs:label "UFO Shape" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/ufo#CityArea
+ex:CityArea rdf:type owl:Class ;
+            rdfs:label "City Area" .
+
+
+###  http://example.org/ufo#Country
+ex:Country rdf:type owl:Class ;
+           rdfs:label "Country" .
+
+
+###  http://example.org/ufo#State
+ex:State rdf:type owl:Class ;
+         rdfs:label "State" .
+
+
+###  http://example.org/ufo#UFO
+ex:UFO rdf:type owl:Class .
+
+
+###  http://example.org/ufo#UfoShape
+ex:UfoShape rdf:type owl:Class ;
+            rdfs:subClassOf ex:UFO ;
+            rdfs:label "UFO Shape" .
+
+
+###  http://example.org/ufo#UfoSighting
+ex:UfoSighting rdf:type owl:Class ;
+               rdfs:label "UFO Sighting" .
+
+
+###  http://example.org/ufo#changed
+ex:changed rdf:type owl:Class ;
+           rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#changing
+ex:changing rdf:type owl:Class ;
+            rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#chevron
+ex:chevron rdf:type owl:Class ;
+           rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#cigar
+ex:cigar rdf:type owl:Class ;
+         rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#circle
+ex:circle rdf:type owl:Class ;
+          rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#cone
+ex:cone rdf:type owl:Class ;
+        rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#crescent
+ex:crescent rdf:type owl:Class ;
+            rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#cross
+ex:cross rdf:type owl:Class ;
+         rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#cylinder
+ex:cylinder rdf:type owl:Class ;
+            rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#delta
+ex:delta rdf:type owl:Class ;
+         rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#diamond
+ex:diamond rdf:type owl:Class ;
+           rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#disk
+ex:disk rdf:type owl:Class ;
+        rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#dome
+ex:dome rdf:type owl:Class ;
+        rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#egg
+ex:egg rdf:type owl:Class ;
+       rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#fireball
+ex:fireball rdf:type owl:Class ;
+            rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#flare
+ex:flare rdf:type owl:Class ;
+         rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#flash
+ex:flash rdf:type owl:Class ;
+         rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#formation
+ex:formation rdf:type owl:Class ;
+             rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#hexagon
+ex:hexagon rdf:type owl:Class ;
+           rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#latitude
+ex:latitude rdf:type owl:Class ;
+            rdfs:subClassOf ex:CityArea .
+
+
+###  http://example.org/ufo#light
+ex:light rdf:type owl:Class ;
+         rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#longitude
+ex:longitude rdf:type owl:Class ;
+             rdfs:subClassOf ex:CityArea .
+
+
+###  http://example.org/ufo#other
+ex:other rdf:type owl:Class ;
+         rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#oval
+ex:oval rdf:type owl:Class ;
+        rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#pyramid
+ex:pyramid rdf:type owl:Class ;
+           rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#rectangle
+ex:rectangle rdf:type owl:Class ;
+             rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#round
+ex:round rdf:type owl:Class ;
+         rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#sphere
+ex:sphere rdf:type owl:Class ;
+          rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#teardrop
+ex:teardrop rdf:type owl:Class ;
+            rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#triangle
+ex:triangle rdf:type owl:Class ;
+            rdfs:subClassOf ex:UfoShape .
+
+
+###  http://example.org/ufo#unknown
+ex:unknown rdf:type owl:Class ;
+           rdfs:subClassOf ex:UfoShape .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+ex:latitude rdfs:label "Latitude" .
+
+
+ex:longitude rdfs:label "Longitude" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ex:changed
+                ex:changing
+                ex:chevron
+                ex:cigar
+                ex:circle
+                ex:cone
+                ex:crescent
+                ex:cross
+                ex:cylinder
+                ex:delta
+                ex:diamond
+                ex:disk
+                ex:dome
+                ex:egg
+                ex:fireball
+                ex:flare
+                ex:flash
+                ex:formation
+                ex:hexagon
+                ex:light
+                ex:other
+                ex:oval
+                ex:pyramid
+                ex:rectangle
+                ex:round
+                ex:sphere
+                ex:teardrop
+                ex:triangle
+                ex:unknown
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ex:changing
+                ex:chevron
+                ex:cigar
+                ex:circle
+                ex:cone
+                ex:crescent
+                ex:cross
+                ex:cylinder
+                ex:delta
+                ex:diamond
+                ex:disk
+                ex:dome
+                ex:egg
+                ex:fireball
+                ex:flare
+                ex:flash
+                ex:formation
+                ex:hexagon
+                ex:light
+                ex:other
+                ex:oval
+                ex:pyramid
+                ex:rectangle
+                ex:round
+                ex:sphere
+                ex:teardrop
+                ex:triangle
+                ex:unknown
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
