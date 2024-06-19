@@ -17,103 +17,10 @@
         <Literal xml:lang="en">This is an ontology for UFO Sightings as part of the final project for the Web Semantics M1 TAL UL</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#Air_Traffic_Control"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Air_Traffic_Control_Employee"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Air_Traffic_Controller"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Amateaur_Astronomer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ex-test_engineer_for_Hawker_Siddley"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ex_Pilot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ex_Police"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ex_RAF"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ex_RN_Cdr"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Former_Air_Traffic_Controller"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Has_Pilot_License"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Journalist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MoD_Guard_Service"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Part-Time_Pilot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pilot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Police"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Police_Officer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Police_Sgt"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RAF"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RN_Air_Traffic_Control"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Retaired_Merchant_Seaman"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Retired_RAF"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#changed"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#changing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#chevron"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#cigar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#circle"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#cityArea"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#cone"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#country"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#crescent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#cross"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#cylinder"/>
     </Declaration>
     <Declaration>
         <Class IRI="#date"/>
@@ -125,40 +32,7 @@
         <Class IRI="#dateSighting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#delta"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#diamond"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#disk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#dome"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#egg"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#fireball"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#flare"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#flash"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#formation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#hexagon"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#latitude"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#light"/>
     </Declaration>
     <Declaration>
         <Class IRI="#longitude"/>
@@ -167,31 +41,10 @@
         <Class IRI="#occupationWitness"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#other"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#oval"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#pyramid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#rectangle"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#round"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#sightingDuration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#sphere"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#state"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#teardrop"/>
     </Declaration>
     <Declaration>
         <Class IRI="#time"/>
@@ -203,9 +56,6 @@
         <Class IRI="#townVillage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#triangle"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ufo"/>
     </Declaration>
     <Declaration>
@@ -213,12 +63,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ufoSighting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#unknown_occupation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#unknown_shape"/>
     </Declaration>
     <Declaration>
         <Class IRI="#witness"/>
@@ -247,189 +91,169 @@
     <Declaration>
         <ObjectProperty IRI="#wasSeen"/>
     </Declaration>
-    <EquivalentClasses>
-        <Class IRI="#Air_Traffic_Control"/>
-        <Class IRI="#Air_Traffic_Controller"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Ex_RAF"/>
-        <Class IRI="#Retired_RAF"/>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#Air_Traffic_Control"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Air_Traffic_Control_Employee"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Air_Traffic_Controller"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Amateaur_Astronomer"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ex-test_engineer_for_Hawker_Siddley"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ex_Pilot"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ex_Police"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ex_RAF"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ex_RN_Cdr"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Former_Air_Traffic_Controller"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Has_Pilot_License"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Journalist"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MoD_Guard_Service"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Part-Time_Pilot"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pilot"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Police"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Police_Officer"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Police_Sgt"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RAF"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RN_Air_Traffic_Control"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Retaired_Merchant_Seaman"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Retired_RAF"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#changed"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#changing"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#chevron"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#cigar"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#circle"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#cone"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#crescent"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#cross"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#cylinder"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
+    <Declaration>
+        <NamedIndividual IRI="#Air_Traffic_Control_Employee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Air_Traffic_Controller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Air_traffic_control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amateur_Astronomer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ex-test_engineer_for_Hawker_Siddley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ex_Pilot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ex_Police"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ex_RAF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ex_RN_Cdr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Former_Air_Traffic_Controller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Has_Pilot_License"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Journalist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MoD_Guard_Service"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Part-Time_Pilot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pilot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Police"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Police_Officer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Police_Sgt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RAF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RN_Air_Traffic_Control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Retired_Merchant_Seaman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Retired_RAF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#changed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#changing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chevron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cigar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#crescent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cross"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cylinder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#delta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diamond"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#disk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#egg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fireball"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#flare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#flash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#formation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hexagon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#other"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oval"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pyramid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rectangle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#round"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sphere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#teadrop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#triangle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unknown_occupation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unknown_shape"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#date"/>
         <Class IRI="#dateSighting"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#delta"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#diamond"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#disk"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#dome"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#egg"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#fireball"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#flare"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#flash"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#formation"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#hexagon"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#latitude"/>
         <Class IRI="#cityArea"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#light"/>
-        <Class IRI="#ufoShape"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#longitude"/>
@@ -440,115 +264,13 @@
         <Class IRI="#witness"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#other"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#oval"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#pyramid"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#rectangle"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#round"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#sphere"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#teardrop"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#time"/>
         <Class IRI="#dateSighting"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#triangle"/>
-        <Class IRI="#ufoShape"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ufoShape"/>
         <Class IRI="#ufo"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#unknown_occupation"/>
-        <Class IRI="#occupationWitness"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#unknown_shape"/>
-        <Class IRI="#ufoShape"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Air_Traffic_Control"/>
-        <Class IRI="#Air_Traffic_Control_Employee"/>
-        <Class IRI="#Air_Traffic_Controller"/>
-        <Class IRI="#Amateaur_Astronomer"/>
-        <Class IRI="#Ex-test_engineer_for_Hawker_Siddley"/>
-        <Class IRI="#Ex_Pilot"/>
-        <Class IRI="#Ex_Police"/>
-        <Class IRI="#Ex_RAF"/>
-        <Class IRI="#Ex_RN_Cdr"/>
-        <Class IRI="#Former_Air_Traffic_Controller"/>
-        <Class IRI="#Has_Pilot_License"/>
-        <Class IRI="#Journalist"/>
-        <Class IRI="#MoD_Guard_Service"/>
-        <Class IRI="#Part-Time_Pilot"/>
-        <Class IRI="#Pilot"/>
-        <Class IRI="#Police"/>
-        <Class IRI="#Police_Officer"/>
-        <Class IRI="#Police_Sgt"/>
-        <Class IRI="#RAF"/>
-        <Class IRI="#RN_Air_Traffic_Control"/>
-        <Class IRI="#Retaired_Merchant_Seaman"/>
-        <Class IRI="#Retired_RAF"/>
-        <Class IRI="#unknown_occupation"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Air_Traffic_Control_Employee"/>
-        <Class IRI="#Air_Traffic_Controller"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Air_Traffic_Controller"/>
-        <Class IRI="#Former_Air_Traffic_Controller"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Ex_Pilot"/>
-        <Class IRI="#Pilot"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Ex_Police"/>
-        <Class IRI="#Police"/>
-        <Class IRI="#Police_Officer"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Ex_RAF"/>
-        <Class IRI="#RAF"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Has_Pilot_License"/>
-        <Class IRI="#Pilot"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Part-Time_Pilot"/>
-        <Class IRI="#Pilot"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Police_Officer"/>
-        <Class IRI="#Police_Sgt"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#changed"/>
-        <Class IRI="#changing"/>
-    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#dateDocumented"/>
         <Class IRI="#dateSighting"/>
@@ -557,6 +279,262 @@
         <Class IRI="#state"/>
         <Class IRI="#townVillage"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Air_Traffic_Control_Employee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Air_Traffic_Controller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Air_traffic_control"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Amateur_Astronomer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Ex-test_engineer_for_Hawker_Siddley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Ex_Pilot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Ex_Police"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Ex_RAF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Ex_RN_Cdr"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Former_Air_Traffic_Controller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Has_Pilot_License"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Journalist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#MoD_Guard_Service"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Part-Time_Pilot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Pilot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Police"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Police_Officer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Police_Sgt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#RAF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#RN_Air_Traffic_Control"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Retired_Merchant_Seaman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#Retired_RAF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#changed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#changing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#chevron"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#cigar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#circle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#cone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#crescent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#cross"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#cylinder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#delta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#diamond"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#disk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#dome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#egg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#fireball"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#flare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#flash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#formation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#hexagon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#light"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#other"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#oval"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#pyramid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#rectangle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#round"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#sphere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#teadrop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#triangle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#occupationWitness"/>
+        <NamedIndividual IRI="#unknown_occupation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ufoShape"/>
+        <NamedIndividual IRI="#unknown_shape"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Air_Traffic_Controller"/>
+        <NamedIndividual IRI="#Air_traffic_control"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Ex_RAF"/>
+        <NamedIndividual IRI="#Retired_RAF"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Police"/>
+        <NamedIndividual IRI="#Police_Officer"/>
+    </SameIndividual>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Air_Traffic_Controller"/>
+        <NamedIndividual IRI="#Former_Air_Traffic_Controller"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Air_traffic_control"/>
+        <NamedIndividual IRI="#Former_Air_Traffic_Controller"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ex_Pilot"/>
+        <NamedIndividual IRI="#Pilot"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ex_Police"/>
+        <NamedIndividual IRI="#Police"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ex_RAF"/>
+        <NamedIndividual IRI="#RAF"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Has_Pilot_License"/>
+        <NamedIndividual IRI="#Pilot"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Part-Time_Pilot"/>
+        <NamedIndividual IRI="#Pilot"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Police_Officer"/>
+        <NamedIndividual IRI="#Police_Sgt"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#changed"/>
+        <NamedIndividual IRI="#changing"/>
+    </DifferentIndividuals>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#partOfState"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
