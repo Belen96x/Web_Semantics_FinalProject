@@ -1,0 +1,60 @@
+QUERIES THAT RETURN SOMETHING LOGICAL
+
+Input:
+
+SELECT ?duration
+WHERE {
+  :ufoSighting :hasDuration ?duration .
+}
+
+Output: 
+duration
+:2700.0
+:7200.0
+:20.0
+
+It is returning the full list of duration related to a sighting
+
+Part of RDF Graph:
+:ufoSighting :hasDuration :2700.0, :7200.0, :20.0, :900.0, :300.0, :180.0, :1200.0,
+    :120.0, :1800.0, :30.0, :360.0, :60.0, :3.0, :270.0, :600.0, :2.0, :3600.0, :10.0,
+    :8.0, :5.0, :14400.0, :15.0, :45.0, :90.0, :10800.0, :240.0, :43.0;
+
+-----
+
+Input:
+
+SELECT ?subject
+WHERE {
+  ?subject rdfs:subClassOf "dallas"@en .
+}
+
+Output:
+subject
+:32.7833333
+:-96.8
+:449194444
+
+It is returning both latitude and longitude as a subclass of a cityArea
+
+Part of RDF Graph:
+
+:44.9194444 rdfs:subClassOf "dallas"@en .
+
+----
+
+Input:
+
+SELECT ?ufo_shape
+WHERE {
+  :ufo :hasShape ?ufo_shape .
+}
+
+Output:
+ufo_shape
+:cylinder
+:light
+:circle
+
+It is returning all the possible shapes of ufo
+
