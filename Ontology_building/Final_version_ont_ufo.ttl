@@ -68,8 +68,6 @@
 :wasSeen rdf:type owl:ObjectProperty ;
          rdfs:domain :ufo ;
          rdfs:range :dateSighting ,
-                    :latitude ,
-                    :longitude ,
                     :witness ;
          rdfs:comment "ufo wasSeen longitude and latitude and dateSightnign by witness" .
 
@@ -77,6 +75,36 @@
 ###  http://www.w3.org/2002/07/owl#topObjectProperty
 owl:topObjectProperty rdfs:domain :cityArea ;
                       rdfs:range :state .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:domain :ufoSighting ;
+      rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#latitude
+:latitude rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :cityArea ;
+          rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#longitude
+:longitude rdf:type owl:DatatypeProperty ;
+           rdfs:domain :cityArea ;
+           rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#time
+:time rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :ufoSighting ;
+      rdfs:range xsd:float .
 
 
 #################################################################
@@ -91,11 +119,6 @@ owl:topObjectProperty rdfs:domain :cityArea ;
 :country rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#date
-:date rdf:type owl:Class ;
-      rdfs:subClassOf :dateSighting .
-
-
 ###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#dateDocumented
 :dateDocumented rdf:type owl:Class ;
                 owl:disjointWith :dateSighting .
@@ -105,19 +128,8 @@ owl:topObjectProperty rdfs:domain :cityArea ;
 :dateSighting rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#latitude
-:latitude rdf:type owl:Class ;
-          rdfs:subClassOf :cityArea .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#longitude
-:longitude rdf:type owl:Class ;
-           rdfs:subClassOf :cityArea .
-
-
 ###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#occupationWitness
-:occupationWitness rdf:type owl:Class ;
-                   rdfs:subClassOf :witness .
+:occupationWitness rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#sightingDuration
@@ -127,11 +139,6 @@ owl:topObjectProperty rdfs:domain :cityArea ;
 ###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#state
 :state rdf:type owl:Class ;
        owl:disjointWith :townVillage .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#time
-:time rdf:type owl:Class ;
-      rdfs:subClassOf :dateSighting .
 
 
 ###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#timeSighting
@@ -147,8 +154,7 @@ owl:topObjectProperty rdfs:domain :cityArea ;
 
 
 ###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#ufoShape
-:ufoShape rdf:type owl:Class ;
-          rdfs:subClassOf :ufo .
+:ufoShape rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#ufoSighting

@@ -9,4 +9,28 @@ Tasks to complete:
 
 5. Some code demonstrating the use of your graph S7
 6. Validation test done and constraints on the graph S8
+
+
+---
+
+FOR SHACL:
+
+-We need to create the graph with all the constraints unified. Once we have it, we import it into the repository of GraphDB and 
+put in the link part (Named Graph) == the link that appears in the configuration of SHACL constraints.
+
+-Review the ontology in protege with Hermit Reasoner to try and find the inconsistencias (check inferences)
+
+-CORRECT THE SECOND SHACL ONE (Check prefixes and syntax that is expecting + Review the query)
+
+-CREATE A NEW POPULATED GRAPH!!! 
+
+- RE- DO the queries!!! And recheck Thames
+
+-Clean the code 
+
+-Add the PREFIX for GREL (Is the prefix base)
+
+---
 7. Ideas about how your application could benefits from learning techniques and other ways of exploring graphs S9, S10
+
+[THEORETICAL]
