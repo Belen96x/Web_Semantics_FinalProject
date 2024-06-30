@@ -13,62 +13,56 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#hasDuration
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#partOfCountry
+:partOfCountry rdf:type owl:ObjectProperty ;
+               rdfs:domain :state ;
+               rdfs:range :country .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#partOfTownVillage
+:partOfTownVillage rdf:type owl:ObjectProperty ;
+                   rdfs:domain :townVillage ;
+                   rdfs:range :country .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/hasDuration
 :hasDuration rdf:type owl:ObjectProperty ;
              rdfs:domain :ufoSighting ;
              rdfs:range :sightingDuration .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#hasOccupation
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/hasOccupation
 :hasOccupation rdf:type owl:ObjectProperty ;
                rdfs:domain :witness ;
                rdfs:range :occupationWitness ;
                rdfs:comment "witness hasOcupation occupationWitness"@en .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#hasShape
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/hasShape
 :hasShape rdf:type owl:ObjectProperty ;
           rdfs:domain :ufo ;
           rdfs:range :ufoShape ;
           rdfs:comment "ufo hasShape ufoShape" .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#partOfCountry
-:partOfCountry rdf:type owl:ObjectProperty ;
-               rdfs:domain :state ,
-                           :townVillage ;
-               rdfs:range :country ;
-               rdfs:comment "state partOfCountry Country"@en .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#partOfState
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/partOfState
 :partOfState rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
              rdfs:domain :cityArea ;
              rdfs:range :state ;
-             owl:propertyDisjointWith :partOfTownVillage ;
              rdfs:comment "cityArea partOfState state" .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#partOfTownVillage
-:partOfTownVillage rdf:type owl:ObjectProperty ;
-                   rdfs:domain :cityArea ;
-                   rdfs:range :townVillage ;
-                   rdfs:comment "cityArea partOfTownVillage townVillage" .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#wasDocumented
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/wasDocumented
 :wasDocumented rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
-               rdfs:domain :ufoSighting ;
-               rdfs:range :dateDocumented .
+               rdfs:domain :ufoSighting .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#wasSeen
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/wasSeen
 :wasSeen rdf:type owl:ObjectProperty ;
          rdfs:domain :ufo ;
-         rdfs:range :dateSighting ,
-                    :witness ;
+         rdfs:range :witness ;
          rdfs:comment "ufo wasSeen longitude and latitude and dateSightnign by witness" .
 
 
@@ -81,370 +75,79 @@ owl:topObjectProperty rdfs:domain :cityArea ;
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#date
-:date rdf:type owl:DatatypeProperty ;
-      rdfs:domain :ufoSighting ;
-      rdfs:range xsd:dateTime .
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#dateTimeDocumented
+:dateTimeDocumented rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :ufoSighting ;
+                    rdfs:range xsd:dateTime ;
+                    owl:propertyDisjointWith :dateTimeSighting .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#latitude
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#dateTimeSighting
+:dateTimeSighting rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ufoSighting ;
+                  rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/latitude
 :latitude rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
           rdfs:domain :cityArea ;
           rdfs:range xsd:float .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#longitude
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/longitude
 :longitude rdf:type owl:DatatypeProperty ;
            rdfs:domain :cityArea ;
            rdfs:range xsd:float .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#time
-:time rdf:type owl:DatatypeProperty ;
-      rdfs:subPropertyOf owl:topDataProperty ;
-      rdfs:domain :ufoSighting ;
-      rdfs:range xsd:float .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#cityArea
-:cityArea rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#country
-:country rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#dateDocumented
-:dateDocumented rdf:type owl:Class ;
-                owl:disjointWith :dateSighting .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#dateSighting
-:dateSighting rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#occupationWitness
-:occupationWitness rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#sightingDuration
-:sightingDuration rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#state
-:state rdf:type owl:Class ;
-       owl:disjointWith :townVillage .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#timeSighting
-:timeSighting rdf:type owl:Class .
-
-
 ###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#townVillage
 :townVillage rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#ufo
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/cityArea
+:cityArea rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/country
+:country rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/occupationWitness
+:occupationWitness rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/sightingDuration
+:sightingDuration rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/state
+:state rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/timeSighting
+:timeSighting rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/ufo
 :ufo rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#ufoShape
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/ufoShape
 :ufoShape rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#ufoSighting
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/ufoSighting
 :ufoSighting rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#witness
+###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo/witness
 :witness rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Air_Traffic_Control_Employee
-:Air_Traffic_Control_Employee rdf:type owl:NamedIndividual ,
-                                       :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Air_Traffic_Controller
-:Air_Traffic_Controller rdf:type owl:NamedIndividual ,
-                                 :occupationWitness ;
-                        owl:sameAs :Air_traffic_control ;
-                        owl:differentFrom :Former_Air_Traffic_Controller .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Air_traffic_control
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Air_traffic_control
-:Air_traffic_control rdf:type owl:NamedIndividual ,
-                              :occupationWitness ;
-                     owl:differentFrom :Former_Air_Traffic_Controller .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Amateur_Astronomer
-:Amateur_Astronomer rdf:type owl:NamedIndividual ,
-                             :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Ex-test_engineer_for_Hawker_Siddley
-:Ex-test_engineer_for_Hawker_Siddley rdf:type owl:NamedIndividual ,
-                                              :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Ex_Pilot
-:Ex_Pilot rdf:type owl:NamedIndividual ,
-                   :occupationWitness ;
-          owl:differentFrom :Pilot .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Ex_Police
-:Ex_Police rdf:type owl:NamedIndividual ,
-                    :occupationWitness ;
-           owl:differentFrom :Police .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Ex_RAF
-:Ex_RAF rdf:type owl:NamedIndividual ,
-                 :occupationWitness ;
-        owl:sameAs :Retired_RAF ;
-        owl:differentFrom :RAF .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Retired_RAF
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Ex_RN_Cdr
-:Ex_RN_Cdr rdf:type owl:NamedIndividual ,
-                    :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Former_Air_Traffic_Controller
-:Former_Air_Traffic_Controller rdf:type owl:NamedIndividual ,
-                                        :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Has_Pilot_License
-:Has_Pilot_License rdf:type owl:NamedIndividual ,
-                            :occupationWitness ;
-                   owl:differentFrom :Pilot .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Journalist
-:Journalist rdf:type owl:NamedIndividual ,
-                     :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#MoD_Guard_Service
-:MoD_Guard_Service rdf:type owl:NamedIndividual ,
-                            :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Part-Time_Pilot
-:Part-Time_Pilot rdf:type owl:NamedIndividual ,
-                          :occupationWitness ;
-                 owl:differentFrom :Pilot .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Pilot
-:Pilot rdf:type owl:NamedIndividual ,
-                :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Police
-:Police rdf:type owl:NamedIndividual ,
-                 :occupationWitness ;
-        owl:sameAs :Police_Officer .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Police_Officer
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Police_Officer
-:Police_Officer rdf:type owl:NamedIndividual ,
-                         :occupationWitness ;
-                owl:differentFrom :Police_Sgt .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Police_Sgt
-:Police_Sgt rdf:type owl:NamedIndividual ,
-                     :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#RAF
-:RAF rdf:type owl:NamedIndividual ,
-              :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#RN_Air_Traffic_Control
-:RN_Air_Traffic_Control rdf:type owl:NamedIndividual ,
-                                 :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Retired_Merchant_Seaman
-:Retired_Merchant_Seaman rdf:type owl:NamedIndividual ,
-                                  :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#Retired_RAF
-:Retired_RAF rdf:type owl:NamedIndividual ,
-                      :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#changed
-:changed rdf:type owl:NamedIndividual ,
-                  :ufoShape ;
-         owl:differentFrom :changing .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#changing
-:changing rdf:type owl:NamedIndividual ,
-                   :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#chevron
-:chevron rdf:type owl:NamedIndividual ,
-                  :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#cigar
-:cigar rdf:type owl:NamedIndividual ,
-                :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#circle
-:circle rdf:type owl:NamedIndividual ,
-                 :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#cone
-:cone rdf:type owl:NamedIndividual ,
-               :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#crescent
-:crescent rdf:type owl:NamedIndividual ,
-                   :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#cross
-:cross rdf:type owl:NamedIndividual ,
-                :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#cylinder
-:cylinder rdf:type owl:NamedIndividual ,
-                   :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#delta
-:delta rdf:type owl:NamedIndividual ,
-                :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#diamond
-:diamond rdf:type owl:NamedIndividual ,
-                  :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#disk
-:disk rdf:type owl:NamedIndividual ,
-               :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#dome
-:dome rdf:type owl:NamedIndividual ,
-               :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#egg
-:egg rdf:type owl:NamedIndividual ,
-              :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#fireball
-:fireball rdf:type owl:NamedIndividual ,
-                   :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#flare
-:flare rdf:type owl:NamedIndividual ,
-                :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#flash
-:flash rdf:type owl:NamedIndividual ,
-                :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#formation
-:formation rdf:type owl:NamedIndividual ,
-                    :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#hexagon
-:hexagon rdf:type owl:NamedIndividual ,
-                  :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#light
-:light rdf:type owl:NamedIndividual ,
-                :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#other
-:other rdf:type owl:NamedIndividual ,
-                :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#oval
-:oval rdf:type owl:NamedIndividual ,
-               :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#pyramid
-:pyramid rdf:type owl:NamedIndividual ,
-                  :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#rectangle
-:rectangle rdf:type owl:NamedIndividual ,
-                    :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#round
-:round rdf:type owl:NamedIndividual ,
-                :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#sphere
-:sphere rdf:type owl:NamedIndividual ,
-                 :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#teadrop
-:teadrop rdf:type owl:NamedIndividual ,
-                  :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#triangle
-:triangle rdf:type owl:NamedIndividual ,
-                   :ufoShape .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#unknown_occupation
-:unknown_occupation rdf:type owl:NamedIndividual ,
-                             :occupationWitness .
-
-
-###  http://www.semanticweb.org/belen/ontologies/2024/5/ufo#unknown_shape
-:unknown_shape rdf:type owl:NamedIndividual ,
-                        :ufoShape .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

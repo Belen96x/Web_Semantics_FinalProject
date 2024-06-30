@@ -18,19 +18,33 @@ FOR SHACL:
 -We need to create the graph with all the constraints unified. Once we have it, we import it into the repository of GraphDB and 
 put in the link part (Named Graph) == the link that appears in the configuration of SHACL constraints.
 
--Review the ontology in protege with Hermit Reasoner to try and find the inconsistencias (check inferences)
+-Review the ontology in protege with Hermit Reasoner to try and find the inconsistencias (check inferences) -- DONE
 
--CORRECT THE SECOND SHACL ONE (Check prefixes and syntax that is expecting + Review the query)
+-CORRECT THE SECOND SHACL ONE (Check prefixes and syntax that is expecting + Review the query) --DONE
 
--CREATE A NEW POPULATED GRAPH!!! 
+-CREATE A NEW POPULATED GRAPH!!! -- DONE
 
 - RE- DO the queries!!! And recheck Thames
 
 -Clean the code 
 
--Add the PREFIX for GREL (Is the prefix base)
+-Add the PREFIX for GREL (Is the prefix base) -- DONE
+
+just rework the queries and finish the shacl
+
+
 
 ---
 7. Ideas about how your application could benefits from learning techniques and other ways of exploring graphs S9, S10
 
 [THEORETICAL]
+
+---
+
+SHACLS constraints:
+
+1. Date documented needs to be posterior of date of sighting
+3. latitude and longitude needs to be float and needs to be one value of each exactly
+
+---
+

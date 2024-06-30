@@ -1,0 +1,38 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://www.semanticweb.org/belen/ontologies/2024/5/ufo/> .
+
+# Shape for Location with Longitude and Latitude constraints
+:LocationShape
+    a sh:NodeShape ;
+    sh:targetClass :cityArea ;
+    sh:property [
+        sh:path :hasLongitude ;
+        sh:datatype xsd:float ;
+        sh:message "Longitude must be a float." ;
+    ] ;
+    sh:property [
+        sh:path :hasLatitude ;
+        sh:datatype xsd:float ;
+        sh:message "Latitude must be a float." ;
+    ] .
+
+# Shape for Date constraints ensuring seenOn is earlier than documentedOn
+:DateConstraintShape
+    a sh:NodeShape ;
+    sh:targetSubjectsOf :seenOn ;
+    sh:property [
+        sh:path :seenOn ;
+        sh:lessThan :documentedOn ;
+        sh:message "The 'seenOn' date must be earlier than the 'documentedOn' date." ;
+    ] .
+
+# Shape for Witness ensuring max one occupation
+:WitnessShape
+    a sh:NodeShape ;
+    sh:targetSubjectsOf :hasOccupation ;
+    sh:property [
+        sh:path :hasOccupation ;
+        sh:maxCount 1 ;
+        sh:message "A witness can have at most one occupation." ;
+    ] .

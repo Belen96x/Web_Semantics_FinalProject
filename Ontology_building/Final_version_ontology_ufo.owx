@@ -17,16 +17,13 @@
         <Literal xml:lang="en">This is an ontology for UFO Sightings as part of the final project for the Web Semantics M1 TAL UL</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="#townVillage"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/cityArea"/>
     </Declaration>
     <Declaration>
         <Class IRI="/country"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/dateDocumented"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="/dateSighting"/>
     </Declaration>
     <Declaration>
         <Class IRI="/occupationWitness"/>
@@ -41,9 +38,6 @@
         <Class IRI="/timeSighting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/townVillage"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/ufo"/>
     </Declaration>
     <Declaration>
@@ -56,6 +50,12 @@
         <Class IRI="/witness"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#partOfCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOfTownVillage"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="/hasDuration"/>
     </Declaration>
     <Declaration>
@@ -65,13 +65,7 @@
         <ObjectProperty IRI="/hasShape"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/partOfCountry"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/partOfState"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/partOfTownVillage"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/wasDocumented"/>
@@ -80,7 +74,10 @@
         <ObjectProperty IRI="/wasSeen"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="/date"/>
+        <DataProperty IRI="#dateTimeDocumented"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateTimeSighting"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/latitude"/>
@@ -88,429 +85,6 @@
     <Declaration>
         <DataProperty IRI="/longitude"/>
     </Declaration>
-    <Declaration>
-        <DataProperty IRI="/time"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Air_Traffic_Control_Employee"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Air_Traffic_Controller"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Air_traffic_control"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Amateur_Astronomer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Ex-test_engineer_for_Hawker_Siddley"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Ex_Pilot"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Ex_Police"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Ex_RAF"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Ex_RN_Cdr"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Former_Air_Traffic_Controller"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Has_Pilot_License"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Journalist"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/MoD_Guard_Service"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Part-Time_Pilot"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Pilot"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Police"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Police_Officer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Police_Sgt"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/RAF"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/RN_Air_Traffic_Control"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Retired_Merchant_Seaman"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/Retired_RAF"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/changed"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/changing"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/chevron"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/cigar"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/circle"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/cone"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/crescent"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/cross"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/cylinder"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/delta"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/diamond"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/disk"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/dome"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/egg"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/fireball"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/flare"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/flash"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/formation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/hexagon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/light"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/other"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/oval"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/pyramid"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/rectangle"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/round"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/sphere"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/teadrop"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/triangle"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/unknown_occupation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/unknown_shape"/>
-    </Declaration>
-    <DisjointClasses>
-        <Class IRI="/dateDocumented"/>
-        <Class IRI="/dateSighting"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="/state"/>
-        <Class IRI="/townVillage"/>
-    </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Air_Traffic_Control_Employee"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Air_Traffic_Controller"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Air_traffic_control"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Amateur_Astronomer"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Ex-test_engineer_for_Hawker_Siddley"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Ex_Pilot"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Ex_Police"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Ex_RAF"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Ex_RN_Cdr"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Former_Air_Traffic_Controller"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Has_Pilot_License"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Journalist"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/MoD_Guard_Service"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Part-Time_Pilot"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Pilot"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Police"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Police_Officer"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Police_Sgt"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/RAF"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/RN_Air_Traffic_Control"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Retired_Merchant_Seaman"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/Retired_RAF"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/changed"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/changing"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/chevron"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/cigar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/circle"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/cone"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/crescent"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/cross"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/cylinder"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/delta"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/diamond"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/disk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/dome"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/egg"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/fireball"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/flare"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/flash"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/formation"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/hexagon"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/light"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/other"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/oval"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/pyramid"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/rectangle"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/round"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/sphere"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/teadrop"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/triangle"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/occupationWitness"/>
-        <NamedIndividual IRI="/unknown_occupation"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/ufoShape"/>
-        <NamedIndividual IRI="/unknown_shape"/>
-    </ClassAssertion>
-    <SameIndividual>
-        <NamedIndividual IRI="/Air_Traffic_Controller"/>
-        <NamedIndividual IRI="/Air_traffic_control"/>
-    </SameIndividual>
-    <SameIndividual>
-        <NamedIndividual IRI="/Ex_RAF"/>
-        <NamedIndividual IRI="/Retired_RAF"/>
-    </SameIndividual>
-    <SameIndividual>
-        <NamedIndividual IRI="/Police"/>
-        <NamedIndividual IRI="/Police_Officer"/>
-    </SameIndividual>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="/Air_Traffic_Controller"/>
-        <NamedIndividual IRI="/Former_Air_Traffic_Controller"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="/Air_traffic_control"/>
-        <NamedIndividual IRI="/Former_Air_Traffic_Controller"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="/Ex_Pilot"/>
-        <NamedIndividual IRI="/Pilot"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="/Ex_Police"/>
-        <NamedIndividual IRI="/Police"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="/Ex_RAF"/>
-        <NamedIndividual IRI="/RAF"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="/Has_Pilot_License"/>
-        <NamedIndividual IRI="/Pilot"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="/Part-Time_Pilot"/>
-        <NamedIndividual IRI="/Pilot"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="/Police_Officer"/>
-        <NamedIndividual IRI="/Police_Sgt"/>
-    </DifferentIndividuals>
-    <DifferentIndividuals>
-        <NamedIndividual IRI="/changed"/>
-        <NamedIndividual IRI="/changing"/>
-    </DifferentIndividuals>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/partOfState"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -519,6 +93,14 @@
         <ObjectProperty IRI="/wasDocumented"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfCountry"/>
+        <Class IRI="/state"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOfTownVillage"/>
+        <Class IRI="#townVillage"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/hasDuration"/>
         <Class IRI="/ufoSighting"/>
@@ -532,19 +114,7 @@
         <Class IRI="/ufo"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/partOfCountry"/>
-        <Class IRI="/state"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/partOfCountry"/>
-        <Class IRI="/townVillage"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="/partOfState"/>
-        <Class IRI="/cityArea"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/partOfTownVillage"/>
         <Class IRI="/cityArea"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -559,6 +129,14 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
         <Class IRI="/cityArea"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfCountry"/>
+        <Class IRI="/country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOfTownVillage"/>
+        <Class IRI="/country"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/hasDuration"/>
         <Class IRI="/sightingDuration"/>
@@ -572,24 +150,8 @@
         <Class IRI="/ufoShape"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/partOfCountry"/>
-        <Class IRI="/country"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="/partOfState"/>
         <Class IRI="/state"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/partOfTownVillage"/>
-        <Class IRI="/townVillage"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/wasDocumented"/>
-        <Class IRI="/dateDocumented"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/wasSeen"/>
-        <Class IRI="/dateSighting"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/wasSeen"/>
@@ -599,20 +161,20 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
         <Class IRI="/state"/>
     </ObjectPropertyRange>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="/partOfState"/>
-        <ObjectProperty IRI="/partOfTownVillage"/>
-    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dateTimeDocumented"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="/latitude"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="/time"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="/date"/>
+        <DataProperty IRI="#dateTimeDocumented"/>
+        <Class IRI="/ufoSighting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateTimeSighting"/>
         <Class IRI="/ufoSighting"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -623,12 +185,12 @@
         <DataProperty IRI="/longitude"/>
         <Class IRI="/cityArea"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="/time"/>
-        <Class IRI="/ufoSighting"/>
-    </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="/date"/>
+        <DataProperty IRI="#dateTimeDocumented"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateTimeSighting"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -639,10 +201,10 @@
         <DataProperty IRI="/longitude"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="/time"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="#dateTimeDocumented"/>
+        <DataProperty IRI="#dateTimeSighting"/>
+    </DisjointDataProperties>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/hasOccupation</IRI>
@@ -655,18 +217,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/partOfCountry</IRI>
-        <Literal xml:lang="en">state partOfCountry Country</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/partOfState</IRI>
         <Literal>cityArea partOfState state</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/partOfTownVillage</IRI>
-        <Literal>cityArea partOfTownVillage townVillage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
